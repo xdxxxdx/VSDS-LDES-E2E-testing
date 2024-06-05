@@ -35,7 +35,7 @@ services:
       - delay-started
 
   ldio-workbench:
-    image: ${LDI_ORCHESTRATOR:-ghcr.io/informatievlaanderen/ldi-orchestrator}:${LDI_ORCHESTRATOR_TAG:-latest}
+    image: ldes/ldi-orchestrator:2.7.0-SNAPSHOT 
     container_name: ${USECASE_NAME:-upgrade-server}_ldio-workbench
     environment:
       - SPRING_CONFIG_NAME=application
